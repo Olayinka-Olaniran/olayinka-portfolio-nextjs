@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320">
+  <!-- backdrop -->
+  <circle cx="320" cy="70" r="60" fill="#F97316" opacity="0.08"/>
+  <circle cx="60" cy="250" r="45" fill="#0F172A" opacity="0.06"/>
+
+  <!-- dotted trail -->
+  <path d="M40 230 Q140 150 210 120" stroke="#94A3B8" stroke-width="2" stroke-dasharray="1 10" stroke-linecap="round" fill="none"/>
+
+  <!-- envelope body -->
+  <g>
+    <rect x="70" y="120" width="220" height="150" rx="14" fill="#1E293B"/>
+    <rect x="70" y="120" width="220" height="150" rx="14" fill="none" stroke="#334155" stroke-width="2"/>
+    <path d="M70 134 L180 210 L290 134" fill="none" stroke="#F97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 264 L145 196" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+    <path d="M290 264 L215 196" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- paper plane -->
+  <g transform="translate(230 40) rotate(18)">
+    <path d="M0 30 L70 0 L18 18 L14 44 L4 26 Z" fill="#F97316"/>
+    <path d="M18 18 L70 0 L14 44 Z" fill="#FDBA74"/>
+  </g>
+
+  <!-- message dots -->
+  <g fill="#F97316">
+    <circle cx="150" cy="180" r="5"/>
+    <circle cx="180" cy="180" r="5"/>
+    <circle cx="210" cy="180" r="5"/>
+  </g>
+
+  <!-- small accent shapes -->
+  <rect x="330" y="220" width="18" height="18" rx="4" fill="#F97316" opacity="0.7" transform="rotate(15 339 229)"/>
+  <circle cx="45" cy="100" r="8" fill="#F97316" opacity="0.6"/>
+</svg>

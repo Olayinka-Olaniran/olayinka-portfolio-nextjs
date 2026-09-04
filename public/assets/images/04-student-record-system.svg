@@ -1,0 +1,228 @@
+<svg viewBox="0 0 806 850" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="student-record-system.dev project preview">
+<defs>
+<clipPath id="clip-card"><rect x="3" y="3" width="800" height="844" rx="18" ry="18"/></clipPath>
+<filter id="shadow-card" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0b0f19" flood-opacity="0.28"/></filter>
+<linearGradient id="bar-chrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2d38"/><stop offset="1" stop-color="#22252e"/></linearGradient>
+</defs>
+<g filter="url(#shadow-card)" transform="translate(0, 0)">
+<g clip-path="url(#clip-card)">
+<rect x="3" y="3" width="800" height="844" fill="#F7F6F2"/>
+<rect x="3" y="3" width="800" height="44" fill="url(#bar-chrome)"/>
+<circle cx="25" cy="25" r="6" fill="#ff5f56"/>
+<circle cx="47" cy="25" r="6" fill="#ffbd2e"/>
+<circle cx="69" cy="25" r="6" fill="#27c93f"/>
+<rect x="283.0" y="13" width="240" height="24" rx="12" fill="#3a3e4a"/>
+<text x="403.0" y="30" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#c7cbd6" text-anchor="middle">student-record-system.dev</text>
+<rect x="3" y="47" width="800" height="56" fill="#1A2744"/>
+<rect x="3" y="47" width="6" height="56" fill="#E6952A"/>
+<text x="33" y="82.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="21" font-weight="700" fill="#ffffff">Student Record System</text>
+<rect x="3" y="103" width="800" height="44" fill="#243358"/>
+<text x="33" y="130.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" font-weight="700" fill="#ffffff">Student Records</text>
+<rect x="33" y="144" width="105" height="3" fill="#E6952A"/>
+<text x="153" y="130.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" font-weight="600" fill="#8892AC">Student Reports</text>
+<rect x="573" y="111" width="200" height="28" rx="6" fill="#2E3E63"/>
+<text x="585" y="129.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#AEB8CE">Search Student Name...</text>
+<text x="403.0" y="169.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#1A2744" text-anchor="middle">STUDENT RECORDS</text>
+<rect x="42.0" y="181" width="722" height="40" fill="#1A2744"/>
+<text x="58.0" y="205.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">S/N</text>
+<text x="84.0" y="205.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="start">Student Name</text>
+<text x="268.0" y="205.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">Age</text>
+<text x="317.0" y="197" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">English</text>
+<text x="317.0" y="210" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="9.5" fill="#7C88A8" text-anchor="middle">(100)</text>
+<text x="371.0" y="197" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">Maths</text>
+<text x="371.0" y="210" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="9.5" fill="#7C88A8" text-anchor="middle">(100)</text>
+<text x="425.0" y="197" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">Physics</text>
+<text x="425.0" y="210" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="9.5" fill="#7C88A8" text-anchor="middle">(100)</text>
+<text x="481.0" y="197" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">Chemistry</text>
+<text x="481.0" y="210" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="9.5" fill="#7C88A8" text-anchor="middle">(100)</text>
+<text x="537.0" y="197" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">Biology</text>
+<text x="537.0" y="210" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="9.5" fill="#7C88A8" text-anchor="middle">(100)</text>
+<text x="593.0" y="197" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">Total score</text>
+<text x="593.0" y="210" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="9.5" fill="#7C88A8" text-anchor="middle">(500)</text>
+<text x="649.0" y="197" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#e9ecf5" text-anchor="middle">Avg Score</text>
+<text x="649.0" y="210" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="9.5" fill="#7C88A8" text-anchor="middle">(100)</text>
+<rect x="42.0" y="221" width="722" height="30" fill="#E4E8F5"/>
+<text x="58.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">1</text>
+<text x="84.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">John Doe</text>
+<text x="268.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">20</text>
+<text x="317.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="371.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="425.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="481.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="537.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="593.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="649.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<rect x="685.0" y="226.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="240.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="251" width="722" height="30" fill="#FFFFFF"/>
+<text x="58.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">2</text>
+<line x1="50.0" y1="275" x2="66.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="84.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Clark Kent</text>
+<line x1="80.0" y1="275" x2="240.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="268.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">34</text>
+<line x1="254.0" y1="275" x2="282.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="317.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<line x1="298.0" y1="275" x2="336.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="371.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<line x1="352.0" y1="275" x2="390.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="425.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">10</text>
+<line x1="406.0" y1="275" x2="444.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="481.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<line x1="460.0" y1="275" x2="502.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="537.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<line x1="518.0" y1="275" x2="556.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="593.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">500</text>
+<line x1="572.0" y1="275" x2="614.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<text x="649.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<line x1="630.0" y1="275" x2="668.0" y2="275" stroke="#C3C9DA" stroke-width="1"/>
+<rect x="685.0" y="256.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="270.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Save</text>
+<rect x="42.0" y="281" width="722" height="30" fill="#E4E8F5"/>
+<text x="58.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">3</text>
+<text x="84.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Bruce Wayne</text>
+<text x="268.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">35</text>
+<text x="317.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">50</text>
+<text x="371.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">50</text>
+<text x="425.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">50</text>
+<text x="481.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">50</text>
+<text x="537.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">50</text>
+<text x="593.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">250</text>
+<text x="649.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">50</text>
+<rect x="685.0" y="286.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="300.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="311" width="722" height="30" fill="#FFFFFF"/>
+<text x="58.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">4</text>
+<text x="84.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Oliver Queen</text>
+<text x="268.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">27</text>
+<text x="317.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="371.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="425.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="481.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="537.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="593.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="649.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">20</text>
+<rect x="685.0" y="316.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="330.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="341" width="722" height="30" fill="#E4E8F5"/>
+<text x="58.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">5</text>
+<text x="84.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Barry Allen</text>
+<text x="268.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">74</text>
+<text x="317.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="371.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="425.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="481.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="537.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="593.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="649.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<rect x="685.0" y="346.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="360.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="371" width="722" height="30" fill="#FFFFFF"/>
+<text x="58.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">6</text>
+<text x="84.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Sunless LOS</text>
+<text x="268.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="317.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="371.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="425.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="481.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="537.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="593.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="649.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<rect x="685.0" y="376.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="390.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="401" width="722" height="30" fill="#E4E8F5"/>
+<text x="58.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">7</text>
+<text x="84.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Klein Morreti</text>
+<text x="268.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">200</text>
+<text x="317.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="371.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="425.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="481.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="537.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="593.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">500</text>
+<text x="649.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<rect x="685.0" y="406.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="420.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="431" width="722" height="30" fill="#FFFFFF"/>
+<text x="58.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">8</text>
+<text x="84.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Percy Jackson</text>
+<text x="268.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">17</text>
+<text x="317.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="371.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="425.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="481.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="537.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="593.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">400</text>
+<text x="649.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">80</text>
+<rect x="685.0" y="436.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="450.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="461" width="722" height="30" fill="#E4E8F5"/>
+<text x="58.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">9</text>
+<text x="84.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">Hades</text>
+<text x="268.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">200</text>
+<text x="317.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="371.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="425.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="481.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="537.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="593.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="649.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<rect x="685.0" y="466.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="480.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="491" width="722" height="30" fill="#FFFFFF"/>
+<text x="58.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">10</text>
+<text x="84.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="start">John Dark Souls</text>
+<text x="268.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">200</text>
+<text x="317.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">0</text>
+<text x="371.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="425.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="481.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="537.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">100</text>
+<text x="593.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">400</text>
+<text x="649.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" fill="#1A2744" text-anchor="middle">80</text>
+<rect x="685.0" y="496.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="510.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Update</text>
+<rect x="42.0" y="521" width="722" height="30" fill="#E4E8F5"/>
+<text x="58.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" ></text>
+<text x="84.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#9AA3B8" text-anchor="start" font-style="italic">Student Name...</text>
+<line x1="80.0" y1="545" x2="240.0" y2="545" stroke="#C3C9DA" stroke-width="1"/>
+<text x="268.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" ></text>
+<text x="317.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" >0</text>
+<line x1="298.0" y1="545" x2="336.0" y2="545" stroke="#C3C9DA" stroke-width="1"/>
+<text x="371.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" >0</text>
+<line x1="352.0" y1="545" x2="390.0" y2="545" stroke="#C3C9DA" stroke-width="1"/>
+<text x="425.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" >0</text>
+<line x1="406.0" y1="545" x2="444.0" y2="545" stroke="#C3C9DA" stroke-width="1"/>
+<text x="481.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" >0</text>
+<line x1="460.0" y1="545" x2="502.0" y2="545" stroke="#C3C9DA" stroke-width="1"/>
+<text x="537.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" >0</text>
+<line x1="518.0" y1="545" x2="556.0" y2="545" stroke="#C3C9DA" stroke-width="1"/>
+<text x="593.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" ></text>
+<text x="649.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#1A2744" text-anchor="middle" ></text>
+<rect x="685.0" y="526.0" width="70" height="20" rx="4" fill="#E6952A"/><text x="720.0" y="540.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Record</text>
+<rect x="680.0" y="569" width="84" height="30" rx="5" fill="#E8ECF4" stroke="#C7CFE3" stroke-width="1"/>
+<text x="722.0" y="588.0" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11.5" font-weight="700" fill="#3A4460" text-anchor="middle">Clear</text>
+<line x1="42" y1="638" x2="764" y2="638" stroke="#E2E6F0" stroke-width="1"/>
+<text x="42" y="669" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" font-weight="700" fill="#1A2744">Generate Student Report Card for:</text>
+<rect x="340" y="654" width="140" height="26" rx="5" fill="#FFFFFF" stroke="#C7CFE3" stroke-width="1"/>
+<text x="352" y="671" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#1A2744">john</text>
+<rect x="490" y="654" width="90" height="26" rx="5" fill="#1A2744"/>
+<text x="535" y="671" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Generate</text>
+<rect x="42" y="694" width="722" height="146" rx="8" fill="#FFFFFF" stroke="#E2E6F0" stroke-width="1"/>
+<rect x="42" y="694" width="722" height="26" rx="8" fill="#1A2744"/>
+<rect x="42" y="710" width="722" height="10" fill="#1A2744"/>
+<rect x="42" y="694" width="4" height="26" fill="#E6952A"/>
+<text x="58" y="711" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#ffffff">REPORT CARD</text>
+<circle cx="738" cy="707" r="8" fill="#D9534F"/>
+<text x="738" y="711" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">&#215;</text>
+<text x="58" y="734" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#1A2744">Name: John Doe&#160;&#160;&#160;&#160;Age: 20</text>
+<rect x="42" y="740" width="722" height="16" fill="#1A2744"/>
+<text x="58" y="752" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff">Courses</text>
+<text x="700" y="752" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="end">Grades</text>
+<rect x="42" y="756" width="722" height="17" fill="#E4E8F5"/>
+<text x="58" y="768" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#1A2744">English</text>
+<text x="700" y="768" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#1A2744" text-anchor="end">0F</text>
+<rect x="42" y="773" width="722" height="17" fill="#FFFFFF"/>
+<text x="58" y="785" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#1A2744">Maths</text>
+<text x="700" y="785" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#1A2744" text-anchor="end">0F</text>
+<rect x="42" y="790" width="722" height="17" fill="#E4E8F5"/>
+<text x="58" y="802" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#1A2744">Physics</text>
+<text x="700" y="802" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" fill="#1A2744" text-anchor="end">0F</text>
+<rect x="42" y="807" width="722" height="17" fill="#FFFFFF"/>
+<text x="403" y="820" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="14" font-weight="700" fill="#AEB8CE" text-anchor="middle" letter-spacing="3">&#8226;&#8226;&#8226;</text>
+<line x1="42" y1="824" x2="764" y2="824" stroke="#C7CFE3" stroke-width="1"/>
+<text x="58" y="836" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#1A2744">Total Score</text>
+<text x="700" y="836" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="11" font-weight="700" fill="#1A2744" text-anchor="end">0</text>
+</g>
+<rect x="3" y="3" width="800" height="844" rx="18" ry="18" fill="none" stroke="#e2e4ea" stroke-width="1.5"/>
+</g>
+</svg>
