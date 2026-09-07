@@ -61,10 +61,33 @@ export const metadata: Metadata = {
   // Web App Manifest enables "Add to Home Screen" on Android
   // and gives the site PWA-grade identity. Next 16 doesn't
   // auto-link a `public/site.webmanifest`, so we declare it
-  // here. The site icon is `app/icon.png` (Next's file-based
-  // metadata convention auto-emits the favicon and
-  // apple-touch-icon links from that single file).
+  // here. The site icon is `app/icon.png` (180×180 brand mark);
+  // explicit `icons` below wire it into the right slots — see
+  // that block for why each link has to be declared manually.
   manifest: "/site.webmanifest",
+  // Icon wiring. The brand mark lives at `app/icon.png`. We
+  // expose it in three sizes:
+  //   - 32×32 / 16×16 PNG for browser tabs (modern browsers
+  //     prefer crisp PNGs over the legacy .ico, especially on
+  //     Chrome/Windows where the .ico is downsampled to 16×16
+  //     and looks fuzzy on high-DPI displays);
+  //   - the original 180×180 under `rel="apple-touch-icon"`
+  //     for the iOS home screen. iOS only respects that exact
+  //     rel — falling back to `rel="icon"` does NOT work for
+  //     home-screen pinning, contrary to what the previous
+  //     code comment claimed;
+  //   - the existing `app/favicon.ico` (16+32 multires) as a
+  //     final legacy fallback for very old browsers and RSS
+  //     readers.
+  // All four files reference the same source image; only the
+  // size and the `<link rel>` slot change.
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/icon.png", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     title: "Olayinka Olaniran — Frontend Engineer",
     description,
