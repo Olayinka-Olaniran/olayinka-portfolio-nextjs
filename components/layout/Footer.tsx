@@ -136,7 +136,7 @@ export default function Footer() {
           <div className="mx-auto max-w-5xl px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
             <p>© {new Date().getFullYear()} Olayinka Olaniran. All rights reserved.</p>
             <p>
-              Built with Next.js, TypeScript &amp; Tailwind. Deployed on Vercel.
+              Built with Next.js, TypeScript &amp; Tailwind. Deployed on Netlify.
             </p>
           </div>
         </div>

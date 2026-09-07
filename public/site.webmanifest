@@ -1,0 +1,17 @@
+{
+  "name": "Olayinka Olaniran — Frontend Engineer",
+  "short_name": "Olayinka",
+  "description": "Frontend engineer building accessible, fast interfaces with vanilla JavaScript fundamentals.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "icons": [
+    {
+      "src": "/assets/icons/Logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

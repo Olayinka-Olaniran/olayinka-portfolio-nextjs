@@ -18,6 +18,16 @@
   # Pin the Node version so local + Netlify builds match.
   # Matches what `nvm use` reads from .nvmrc if present.
   NODE_VERSION = "20"
+  # Canonical site URL exposed to the client at build time.
+  # `app/layout.tsx` reads `NEXT_PUBLIC_SITE_URL` to compute
+  # `metadataBase`, the `og:url`, canonical link, and JSON-LD
+  # `@id` fields. Without this, preview deploys would otherwise
+  # emit OG tags pointing at production (a cross-domain image
+  # is what tripped the "og:image is broken or unreachable"
+  # SEO audit). Set per-site in the Netlify UI for the
+  # production deploy; preview deploys automatically use the
+  # `dev-olayinka-portfolio.netlify.app` fallback in code.
+  NEXT_PUBLIC_SITE_URL = "https://olayinka-olaniran.netlify.app"
 
 # Next.js 16 + App Router support. Netlify installs this plugin
 # automatically when it detects Next.js, but declaring it here
