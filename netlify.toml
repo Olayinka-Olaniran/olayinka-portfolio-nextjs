@@ -1,0 +1,27 @@
+# Netlify build configuration for the Next.js portfolio.
+#
+# Netlify auto-detects Next.js projects and installs
+# `@netlify/plugin-nextjs` from the manifest below, which gives
+# Next.js 16 full App Router + RSC support. The two fields below
+# just make the build deterministic: any contributor who connects
+# the repo gets the same setup without touching the Netlify UI.
+#
+# Static output: `next build` prerenders `/` and `/_not-found`,
+# so the site deploys as static pages. Netlify publishes from
+# `.next` after the plugin processes the build output.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # Pin the Node version so local + Netlify builds match.
+  # Matches what `nvm use` reads from .nvmrc if present.
+  NODE_VERSION = "20"
+
+# Next.js 16 + App Router support. Netlify installs this plugin
+# automatically when it detects Next.js, but declaring it here
+# makes the dependency explicit and lets the version be pinned
+# in the future if a Next.js 16 minor breaks the adapter.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
