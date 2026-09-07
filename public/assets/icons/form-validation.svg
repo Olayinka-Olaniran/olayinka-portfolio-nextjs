@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- form / document outline -->
+  <path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+  <path d="M15 3v4h4" />
+  <!-- input field -->
+  <line x1="8" y1="12" x2="14" y2="12" />
+  <!-- check mark -->
+  <path d="M9 17l1.5 1.5L13 16" />
+</svg>

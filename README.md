@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Olayinka Olaniran — Portfolio
 
-## Getting Started
+A modern, fast, accessible portfolio built with **Next.js 16 (App Router)**, **TypeScript**, and **Tailwind CSS v4**. The site showcases 5 production-style JavaScript projects, an interactive skill graph that visualises which techniques power which projects, and engineering notes that walk through the trade-offs of each build.
 
-First, run the development server:
+> Built as a single-page portfolio with deliberate focus on fundamentals: clear typography, fast paint, and zero framework bloat on the critical path.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+- **Hero** with a role-cycling headline, a live "Now" widget, and a stats strip.
+- **Interactive Skills Graph** — hover or tap a technique (DOM, `localStorage`, `fetch`, …) to see edges light up to the projects that use it. Built with state-driven SVG (no DOM mutation), so it stays in sync with the React tree.
+- **Project cards** with a per-card view toggle between *Overview* and *Engineering Notes* (problem, decision, challenge, hindsight).
+- **Command palette** (`⌘K` / `Ctrl-K`) with grouped actions — Navigation, Projects, and quick actions like "Copy email".
+- **Contact section** with a Netlify-ready form, floating-label inputs, copy-email button, and social links.
+- **Scroll progress bar**, **scroll-reveal animations** (respects `prefers-reduced-motion`), and a contextual **footer** with a smart "scroll to top" button.
+- **Background Fx** — subtle animated grid + blobs. No libraries, just CSS.
+
+## 🛠️ Tech Stack
+
+| Layer        | Choice                                                   |
+| ------------ | -------------------------------------------------------- |
+| Framework    | Next.js 16 (App Router, Server + Client Components)      |
+| Language     | TypeScript (strict)                                      |
+| Styling      | Tailwind CSS v4 (CSS-first, `@theme` tokens)             |
+| Fonts        | `next/font` → Geist + Geist Mono (self-hosted)           |
+| Images       | `next/image` with explicit `width`/`height` / `fill`     |
+| Forms        | Netlify Forms (honeypot + native fetch)                  |
+| Clipboard    | `navigator.clipboard.writeText` (with `execCommand` fallback for non-secure contexts) |
+
+## 🏗️ Project Structure
+
+```
+app/
+  layout.tsx          // Root layout: font loading, metadata, BackgroundFx
+  page.tsx            // Home — composes all sections
+  globals.css         // Design system tokens + utilities + animations
+components/
+  layout/
+    Header.tsx        // Sticky nav with animated active pill
+    Footer.tsx        // Multi-column footer + smart scroll-to-top
+  sections/
+    Hero.tsx          // Headline, role switcher, Now widget
+    SkillsGraph.tsx   // Interactive SVG graph
+    Portfolio.tsx     // Project cards (overview / engineering toggle)
+    Contact.tsx       // Form + info card
+  ui/
+    CommandPalette.tsx
+    BackgroundFx.tsx
+    ScrollProgress.tsx
+    Badge.tsx, Button.tsx, Card.tsx
+hooks/
+  useScrollSpy.ts
+  useCommandPalette.ts
+  useCopyToClipboard.ts
+  useReveal.ts        // IntersectionObserver for [data-reveal]
+data/
+  projectsMetadata.ts
+  skillsGraphData.ts
+types/
+  portfolio.ts
+public/
+  assets/icons/, assets/images/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Dev server
+npm run dev          # http://localhost:3000
 
-## Learn More
+# Lint
+npm run lint
 
-To learn more about Next.js, take a look at the following resources:
+# Production build
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧭 Hooks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Hook                    | What it does                                                                                                |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `useScrollSpy`          | Returns the id of the section currently in view. Topmost intersecting section wins; tolerates empty list.  |
+| `useCommandPalette`     | State + global ⌘/Ctrl-K listener + body-scroll-lock. Exposes `groups` (Navigation / Projects / Actions).    |
+| `useCopyToClipboard`    | Wraps `navigator.clipboard.writeText` with a clean fallback, transient `copied` flag, and proper cleanup.   |
+| `useReveal`             | One-shot IntersectionObserver that toggles `is-revealed` on every `[data-reveal]` element.                  |
 
-## Deploy on Vercel
+## ♿ Accessibility
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Visible focus ring on every interactive element (`:focus-visible`).
+- `aria-current="page"` on the active nav link; `aria-expanded` on the mobile menu trigger; `aria-modal` and a labelled search field on the palette.
+- All icons that are purely decorative carry `aria-hidden="true"`; meaningful ones have an `aria-label`.
+- `prefers-reduced-motion` disables all custom animations, scroll-reveal, and the floating background blobs.
+- Color contrast on the dark theme is `WCAG AA` or better at body sizes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚢 Deploying
+
+The site is framework-agnostic — pick your home:
+
+- **Vercel** — push to a Git provider and import.
+- **Netlify** — works out of the box; the contact form posts to `/?form-name=contact` and Netlify picks it up via the `data-netlify="true"` attribute.
+- **Static export** — add `output: 'export'` to `next.config.ts` and run `next build` (note: dynamic features would need adapting).
+
+## 📚 See also
+
+- [`DESIGN.md`](./DESIGN.md) — design system, tokens, and the "why" behind each section.
+- [`CHANGELOG.md`](./CHANGELOG.md) — what changed and why, including the JS → React port notes.
+
+## 📄 License
+
+MIT — feel free to fork and adapt the structure for your own portfolio.
+
