@@ -21,13 +21,30 @@
   # Canonical site URL exposed to the client at build time.
   # `app/layout.tsx` reads `NEXT_PUBLIC_SITE_URL` to compute
   # `metadataBase`, the `og:url`, canonical link, and JSON-LD
-  # `@id` fields. Without this, preview deploys would otherwise
-  # emit OG tags pointing at production (a cross-domain image
-  # is what tripped the "og:image is broken or unreachable"
-  # SEO audit). Set per-site in the Netlify UI for the
-  # production deploy; preview deploys automatically use the
-  # `dev-olayinka-portfolio.netlify.app` fallback in code.
-  NEXT_PUBLIC_SITE_URL = "https://olayinka-olaniran.netlify.app"
+  # `@id` fields. This must match the live domain or social
+  # platforms will reject the OG image as cross-origin (a
+  # hard-coded wrong domain is what tripped the "og:image is
+  # broken or unreachable" SEO audit).
+  NEXT_PUBLIC_SITE_URL = "https://dev-olayinka-portfolio.netlify.app"
+
+# Netlify response headers.
+#
+# This block sets Content-Type overrides for static files that
+# Netlify's default MIME map gets wrong. Without these, browsers
+# and validators (OpenGraph.to, Lighthouse, W3C manifest validator)
+# refuse to parse the file:
+#
+#   - `site.webmanifest` is shipped by Netlify as
+#     `application/octet-stream` by default, which makes PWA
+#     validators (and the `<link rel="manifest">` consumer in
+#     Chrome) reject it. The official MIME is
+#     `application/manifest+json`.
+#
+# New entries go above the `[[plugins]]` block at the bottom.
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
 
 # Next.js 16 + App Router support. Netlify installs this plugin
 # automatically when it detects Next.js, but declaring it here
