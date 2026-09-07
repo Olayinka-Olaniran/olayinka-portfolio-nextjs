@@ -97,7 +97,16 @@ export default function Contact() {
     setStatus({ tone: 'info', message: 'Sending your message…' });
 
     try {
-      const response = await fetch('/', {
+      // POST to the static `__forms.html` stub. With
+      // `@netlify/plugin-nextjs@5`, the plugin no longer
+      // auto-detects forms from React JSX (it would actually
+      // fail the build with "requires migration steps"); the
+      // migration is to keep form definitions in a static file
+      // under `public/` and POST to it from the client. The
+      // hidden `form-name` input + URL-encoded body is what
+      // Netlify Forms needs to attribute the submission to
+      // the form named `contact`.
+      const response = await fetch('/__forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(data as unknown as Record<string, string>).toString(),
@@ -138,13 +147,22 @@ export default function Contact() {
       </header>
 
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-[1.4fr_1fr] gap-4 max-w-4xl mx-auto">
-        {/* Form */}
+        {/* Form
+            Netlify Forms migration for `@netlify/plugin-nextjs@5`:
+            the `data-netlify` / `data-netlify-honeypot` attributes
+            used to be the deploy-time hook that told the form
+            scanner to register this form. v5 of the plugin treats
+            those JSX attributes as a build error and forces a
+            migration: the form definition now lives in
+            `public/__forms.html`, and the React form POSTs to that
+            file. The visible markup here is otherwise unchanged —
+            the `name`, hidden `form-name` input, and `bot-field`
+            honeypot are still required so the submission can be
+            attributed correctly. */}
         <form
           ref={formRef}
           name="contact"
           method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="card-surface p-5 md:p-6 space-y-4"
           noValidate={false}

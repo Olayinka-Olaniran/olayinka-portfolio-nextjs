@@ -1,0 +1,27 @@
+<!--
+  Netlify Forms deploy-time detection stub.
+
+  This file is never served to visitors. Netlify's build-time
+  form scanner looks for `data-netlify="true"` markers in static
+  HTML output, and Next.js doesn't emit our Contact form to
+  the prerendered HTML in a way the new `@netlify/plugin-nextjs@5`
+  scanner can pick up reliably. The plugin v5 forms migration
+  (https://opennext.js.org/netlify/forms) requires the form
+  definition to live in a static file under `public/`, and the
+  React form to POST to that file directly.
+
+  The form fields mirror the Contact section: name, email, message,
+  plus the honeypot `bot-field` so spam filtering keeps working.
+-->
+<html>
+  <head></head>
+  <body>
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" type="text" />
+      <input name="email" type="text" />
+      <input name="message" type="text" />
+      <input name="bot-field" type="text" />
+    </form>
+  </body>
+</html>
