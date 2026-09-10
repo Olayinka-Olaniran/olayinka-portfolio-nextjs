@@ -10,6 +10,7 @@ A modern, fast, accessible portfolio built with **Next.js 16 (App Router)**, **T
 
 - **Hero** with a role-cycling headline, a live "Now" widget, and a stats strip.
 - **Interactive Skills Graph** — hover or tap a technique (DOM, `localStorage`, `fetch`, …) to see edges light up to the projects that use it. Built with state-driven SVG (no DOM mutation), so it stays in sync with the React tree.
+- **Cross-section navigation** — clicking a project node in the Skills Graph automatically navigates the Portfolio section to the correct page (if paginated) before scrolling to the project card. No more broken anchor links when projects span multiple pages!
 - **Project cards** with a per-card view toggle between *Overview* and *Engineering Notes* (problem, decision, challenge, hindsight).
 - **Command palette** (`⌘K` / `Ctrl-K`) with grouped actions — Navigation, Projects, and quick actions like "Copy email".
 - **Contact section** with a Netlify-ready form, floating-label inputs, copy-email button, and social links.

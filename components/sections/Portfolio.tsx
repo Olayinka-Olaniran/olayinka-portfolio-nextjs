@@ -1,11 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import React, { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import type { Project } from '@/types/portfolio';
 
 interface PortfolioProps {
   projects: Project[];
+  page: number;
+  setPage: (page: number) => void;
+  pageCount: number;
 }
 
 /**
@@ -286,23 +289,14 @@ function ProjectCard({ project, view, onSetView }: ProjectCardProps) {
   );
 }
 
-export default function Portfolio({ projects }: PortfolioProps) {
+export default function Portfolio({ projects, page, setPage, pageCount }: PortfolioProps) {
   // Per-project view state (overview vs engineering notes) is
   // keyed by project id, so it survives page changes — flipping
   // a card to engineering notes on page 1, then paging to page
   // 2 and back, still shows the notes.
   const [views, setViews] = useState<Record<string, ViewMode>>({});
 
-  // Independent pagination for the portfolio grid. Simple slice:
-  // page 0 → items 0..N-1, page 1 → items N..2N-1, etc. The
-  // last page may have fewer items than `PROJECTS_PER_PAGE`
-  // (e.g. with 7 projects and pageSize 6, page 1 has 1 item);
-  // a short final page is fine here because the grid is just a
-  // grid — unlike the skills graph columns, where nodes map to
-  // a fixed graph layout, the portfolio's grid happily shows
-  // fewer cards on a short last page.
-  const [page, setPage] = useState(0);
-  const pageCount = Math.max(1, Math.ceil(projects.length / PROJECTS_PER_PAGE));
+  // Visible projects for the current page (controlled by parent)
   const visibleProjects = useMemo(
     () =>
       projects.slice(

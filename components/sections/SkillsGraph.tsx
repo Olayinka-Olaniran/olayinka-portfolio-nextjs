@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import React, {
+import {
   useCallback,
   useEffect,
   useLayoutEffect,
@@ -14,6 +14,7 @@ import type { Project, Skill } from '@/types/portfolio';
 interface SkillsGraphProps {
   skills: Skill[];
   projects: Project[];
+  onNavigateToProject: (projectId: string) => void;
 }
 
 interface Edge {
@@ -173,7 +174,7 @@ function Stepper({
  *   3. Uses refs for DOM nodes instead of querySelectorAll hacks
  *      in a global effect.
  */
-export default function SkillsGraph({ skills, projects }: SkillsGraphProps) {
+export default function SkillsGraph({ skills, projects, onNavigateToProject }: SkillsGraphProps) {
   const skillRefs = useRef<Record<string, HTMLLIElement | null>>({});
   const projectRefs = useRef<Record<string, HTMLLIElement | null>>({});
   const graphRef = useRef<HTMLDivElement>(null);
@@ -385,6 +386,9 @@ export default function SkillsGraph({ skills, projects }: SkillsGraphProps) {
   const onProjectClick = (id: string) => {
     setActiveSkill(null);
     setActiveProject((prev) => (prev === id ? null : id));
+    // Extract the actual project ID from the node ID (format: "project-{id}")
+    const projectId = id.replace('project-', '');
+    onNavigateToProject(projectId);
   };
 
   // Outside click clears the active graph (mobile).
@@ -665,7 +669,12 @@ export default function SkillsGraph({ skills, projects }: SkillsGraphProps) {
                   </h3>
                   <a
                     href={p.href}
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      // Navigate Portfolio to the correct page before following the link
+                      const projectId = p.id.replace('project-', '');
+                      onNavigateToProject(projectId);
+                    }}
                     className="inline-flex items-center justify-center w-7 h-7 rounded-md border border-slate-700 text-slate-300 hover:text-orange-400 hover:border-orange-500/40 transition"
                     aria-label={`Open ${p.title}`}
                   >
