@@ -77,8 +77,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-400 leading-relaxed">
-              Frontend engineer focused on accessible, fast interfaces —
-              built with JavaScript fundamentals first.
+              Frontend engineer focused on accessible, fast interfaces — 
+              grounded in strong web fundamentals.
             </p>
           </div>
 

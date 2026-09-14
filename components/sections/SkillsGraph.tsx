@@ -601,6 +601,7 @@ export default function SkillsGraph({ skills, projects, onNavigateToProject }: S
                       alt=""
                       width={20}
                       height={20}
+                      style={{ fill: '#f1f5f9' }}
                       className="w-5 h-5 shrink-0 opacity-80"
                     />
                     <span className="font-semibold text-xs md:text-sm text-slate-100">

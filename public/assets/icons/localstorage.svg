@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#f1f5f9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <!-- cylinder / database stack -->
   <ellipse cx="12" cy="5.5" rx="6" ry="2" />
   <path d="M6 5.5v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5" />

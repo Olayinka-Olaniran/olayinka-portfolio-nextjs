@@ -99,5 +99,23 @@ export const projects: Project[] = [
       hindsight: 'State machines feel like overkill for simple apps, but they\'re the foundation of robust UIs. Learned that lesson here.'
     },
     skillsUsed: ['fetch-api', 'async-await', 'dom-manipulation']
+  },
+  {
+    id: '09',
+    tags: ['Portfolio', 'Skill Graph', 'Vanilla JS', 'Vite', 'Tailwind'],
+    title: 'Portfolio Website',
+    shortDescription: 'Vanilla JS + Tailwind + Vite portfolio showcasing an interactive skill-to-project graph with 5 projects and engineering notes.',
+    fullDescription: 'Pre-React/Next.js JS mastery demo. SVG skill graph, engineering notes toggle (Problem/Key Decision/Challenge/Hindsight), responsive nav, Netlify Forms with honeypot, accessible disclosure patterns for skills.',
+    technologies: ['JavaScript', 'HTML5', 'CSS3', 'Vite', 'Tailwind CSS'],
+    image: './assets/images/09-portfolio-homepage.svg',
+    demoUrl: 'https://olayinka-olaniran.github.io/Assessment_Project_9/',
+    repoUrl: 'https://github.com/Olayinka-Olaniran/Assessment_Project_9',
+    engineeringNotes: {
+      problem: 'Portfolio to showcase 5 assessment projects with interactive skill graph, proving vanilla JS before React/Next.js.',
+      keyDecision: 'Zero frameworks — vanilla ES6 + Vite + Tailwind. SVG edges on hover (desktop); tap-to-reveal planned for mobile.',
+      challenge: 'SVG overflow/clipping across breakpoints; merging mobile tap-to-reveal with accordion without state drift.',
+      hindsight: 'No framework forced deeper DOM/event/module skills. Data-driven updates (projectsMetadata, skillsGraphData) scale easily.'
+    },
+    skillsUsed: ['dom-manipulation', 'event-delegation', 'modal-dialogs', 'array-methods', 'localstorage']
   }
 ];
