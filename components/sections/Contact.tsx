@@ -270,7 +270,7 @@ export default function Contact() {
 
             <div className="grid grid-cols-3 gap-2 border-y border-white/10 py-4">
               <div className="text-center">
-                <p className="text-orange-400 font-bold text-xl">5+</p>
+                <p className="text-orange-400 font-bold text-xl">6+</p>
                 <p className="text-slate-400 text-[10px] leading-tight mt-1 uppercase tracking-wider">
                   Built Projects
                 </p>

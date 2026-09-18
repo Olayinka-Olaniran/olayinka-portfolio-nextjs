@@ -21,7 +21,7 @@ function articleFor(word: string): 'A' | 'An' {
 }
 
 const STATS = [
-  { value: '5', label: 'Engineered Projects' },
+  { value: '6', label: 'Engineered Projects' },
   { value: '9', label: 'Techniques Mapped' },
   { value: '100%', label: 'JavaScript Fundamentals' },
 ];
@@ -124,7 +124,7 @@ export default function Hero() {
         data-reveal-delay="340"
         className="mt-2 text-sm sm:text-base text-slate-400 max-w-xl"
       >
-        5 featured projects showcasing form parsing, live APIs, state
+        6 featured projects showcasing form parsing, live APIs, state
         persistence, and interactive UI logic — grounded in core JavaScript
         before scaling into React &amp; TypeScript.
       </p>
